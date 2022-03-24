@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Webhook Tutorial</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <form>
+        <h1>Informationen beschaffen</h1>
+        <h4>Wenn du etwas freilässt und dann abschicktst wird es nicht ankommen!</h4>
+        <input type="text" id="name" value="" placeholder="Name der Person"> <br> <br>
+        <input type="text" id="job" value="" placeholder="Job der Person"> <br> <br>
+        <textarea id="what" cols="30" rows="10" placeholder="Was sollen wir herausfinden (Bitte deutlich beschreiben)"></textarea> <br> <br>
+        <textarea id="why" cols="30" rows="10" placeholder="Grund (Bitte deutlich beschreiben)"></textarea> <br> <br>
+        <input id="submit" type="button" value="Submit" onclick="sendMessage()" />
+        <div id="alert" style="color: red"></div>
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>
