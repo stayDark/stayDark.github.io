@@ -3,6 +3,7 @@ function sendMessage() {
     request.open("POST", "https://discord.com/api/webhooks/956283724843065445/U6J2GHLM99v2QgaD8iKC5ydnhTlGWGd1nIiVqtoNzXPBYOipnuN6hHHX0zq5-KCIY1-L");
     request.setRequestHeader('Content-type', 'application/json');
 
+    var number = document.getElementById('number').value;
     var name = document.getElementById('name').value;
     var job = document.getElementById('job').value;
     var what = document.getElementById('what').value;
@@ -16,6 +17,10 @@ function sendMessage() {
         title: "Informations Beschaffung",
         description: `Es soll etwas über eine Person herausgefunden werden!`,
         fields: [
+            {
+                name: "Nummer",
+                value: `${number}`
+            },
             {
                 name: "Name",
                 value: `${name}`
